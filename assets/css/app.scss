@@ -1,0 +1,96 @@
+$color1: #050505;
+$color2: #ff747d;
+$color3: #fdd5b0;
+$color4: #32594f;
+
+$color-white: #fff;
+$forms-input-bg-color: #f0f0f0;
+$forms-input-ph-color: #aaa;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+a{
+  text-decoration: none;
+  &.btn{
+    padding: 10px;
+  }
+}
+
+body,
+input {
+  font-family: 'Poppins', sans-serif;
+}
+
+@import "session/forms-container";
+@import "components/btn";
+@import "components/container";
+@import "panels/container";
+@import "panels/animation";
+@import "panels/responsive";
+@import "doctor/dashboard";
+
+@import "../node_modules/nprogress/nprogress.css";
+
+/* LiveView specific classes for your customizations */
+@import "components/error-input";
+
+
+.phx-no-feedback.invalid-feedback,
+.phx-no-feedback .invalid-feedback {
+  display: none;
+}
+
+.phx-click-loading {
+  opacity: 0.5;
+  transition: opacity 1s ease-out;
+}
+
+.phx-disconnected {
+  cursor: wait;
+}
+
+.phx-disconnected * {
+  pointer-events: none;
+}
+
+.phx-modal {
+  opacity: 1 !important;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.phx-modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.phx-modal-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.phx-modal-close:hover,
+.phx-modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@import "components/alert";
