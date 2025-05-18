@@ -15,15 +15,7 @@ services:
       - db
     env_file:
       - ./compose.env
-    # environment:
-      # HOST_DB: "db"
-      # MONGO_URL: "mongodb://mongo:27017/doctor_schedule"
-      # REDIS_URL: "redis://redis-app:6379"
-      # GUARDIAN_SECRET: "jSZXHnu1mN7Y4ZY65ghBSeJIZtowq/EsBSllejDFfGCYosYJ5Faa8ZkAzoqmsjoR"
-      # SMTP_HOST: smtp.ethereal.email
-      # SMTP_PORT: 587
-      # SMTP_USERNAME: alaina.erdman@ethereal.email
-      # SMTP_PASSWORD: b4c71ee2PW4bRkKzKm
+      #here env
   db:
     image: postgres:12
     environment:
