@@ -1,7 +1,7 @@
 defmodule DoctorSchedule.MixProject do
   use Mix.Project
 
-  @github_url "https://github.com/theguuholi/doctor_schedule"
+  @github_url "https://github.com/unmatched78/doctor_schedule"
 
   def project do
     [
@@ -17,7 +17,6 @@ defmodule DoctorSchedule.MixProject do
       source_url: @github_url,
       homepage_url: @github_url,
       package: [
-        maintainers: ["Gustavo Oliveira"],
         licenses: ["MIT"],
         links: %{
           "GitHub" => @github_url
